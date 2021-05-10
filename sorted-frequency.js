@@ -11,7 +11,7 @@ function sortedFrequency(arr, num) {
 
 const findFirstOccurrence = (arr, num, beg = 0, end = arr.length - 1) => {
 	if (end >= beg) {
-		const mid = beg + Math.floor((end - beg) / 2);
+		const mid = beg + Math.floor((end + beg) / 2);
 		if (mid === 0 || (arr[mid - 1] < num && arr[mid] === num)) {
 			return mid;
 		} else if (arr[mid] < num) {
