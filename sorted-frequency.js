@@ -1,9 +1,9 @@
 function sortedFrequency(arr, num) {
 	const firstOccurrence = findFirstOccurrence(arr, num);
-	const findLastOccurrence = findLastOccurrence(arr, num);
+	const LastOccurrence = findLastOccurrence(arr, num);
 	if (firstOccurrence === -1) return 0;
-	const numZeros = arr.length - firstOccurrence;
-	return numZeros;
+	const numTimes = LastOccurrence - firstOccurrence;
+	return numTimes;
 }
 
 const findFirstOccurrence = (arr, num, beg = 0, end = arr.length - 1) => {
